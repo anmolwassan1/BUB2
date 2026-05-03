@@ -1,7 +1,7 @@
 export const host =
   process.env.NODE_ENV === "production"
     ? "https://bub2.wmcloud.org"
-    : "http://localhost:5000"; //If you have port set in env file, replace 5000 with "process.env.PORT"
+    : `http://localhost:${process.env.NEXT_PUBLIC_PORT}`;
 export const stats_data_endpoint = `${host}/getstats`;
 export const queue_data_endpoint = `${host}/getqueue`;
 export const queuelist_data_endpoint = `${host}/getqueuelist`;
