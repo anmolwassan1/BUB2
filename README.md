@@ -70,7 +70,7 @@ Rename `.env.example` to `.env`. Then, to fill the credentials,
       }
       ```
 - Enter the client application key and client application secret in the `WIKIMEDIA_CLIENT_ID` and `WIKIMEDIA_CLIENT_SECRET` respectively
-- Enter the `NEXTAUTH_URL` with http://localhost:5000.
+- Enter the `NEXTAUTH_URL` with http://localhost:5673 (default port).
 - Go to [wikisource Bot] (https://meta.wikimedia.beta.wmflabs.org/wiki/Special:BotPasswords) to generate your `EMAIL_BOT_USERNAME` and `EMAIL_BOT_PASSWORD`. When creating your bot, tick 'send email to users' under the Applicable Grants section. Go ahead and enter the generated credentials in the `.env` file.
 - Enter the `NEXT_PUBLIC_WIKIMEDIA_URL` which is used to authenticate with Wikimedia environment for login, send emails etc. For example - https://meta.wikimedia.beta.wmflabs.org
 - Enter the `NEXT_PUBLIC_COMMONS_URL` which is used to upload the files to Commons. For example - https://meta.commons.beta.wmflabs.org for local setup.
@@ -86,7 +86,7 @@ Rename `.env.example` to `.env`. Then, to fill the credentials,
 #### Start the server
 
 - Run `npm run dev` for development and `npm run start` for production.
-- Open your browser and navigate to http://localhost:5000
+- Open your browser and navigate to http://localhost:5673 (default port)
 
 <a id="contributing"></a>
 ## Contributing

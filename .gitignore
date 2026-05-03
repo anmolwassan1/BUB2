@@ -7,3 +7,4 @@ out/
 *.log
 .env.stage
 .env.local
+.cursorignore

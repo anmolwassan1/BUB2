@@ -124,7 +124,7 @@ async function uploadZipToIA(
   onError
 ) {
   const bucketTitle = metadata.IAIdentifier;
-  const IAuri = `http://s3.us.archive.org/${bucketTitle}/${bucketTitle}_images.zip`;
+  const IAuri = `https://s3.us.archive.org/${bucketTitle}/${bucketTitle}_images.zip`;
   metadata = _.omit(metadata, [
     "coverImage",
     "commonsMetadata",
@@ -168,7 +168,7 @@ function uploadPdfToIA(pdfUrl, job, metadata, trueURI, done) {
   let bufferLength = 0;
   const chunks = [];
   const bucketTitle = metadata.IAIdentifier;
-  const IAuri = `http://s3.us.archive.org/${bucketTitle}/${bucketTitle}.pdf`;
+  const IAuri = `https://s3.us.archive.org/${bucketTitle}/${bucketTitle}.pdf`;
   getPdf.on("response", function (data) {
     if (data.statusCode !== 200) {
       logger.log({

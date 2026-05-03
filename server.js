@@ -7,7 +7,7 @@ const open = require("open");
 const compression = require("compression");
 require("dotenv").config();
 const dev = process.env.NODE_ENV !== "production";
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.NEXT_PUBLIC_PORT;
 const GB_KEY = process.env.GB_KEY;
 const trove_key = process.env.trove_key;
 const winston = require("winston");

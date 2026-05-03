@@ -57,7 +57,7 @@ TroveQueue.process((job, done) => {
           isEmailNotification,
         } = job.data.details;
         const bucketTitle = IAIdentifier;
-        const IAuri = `http://s3.us.archive.org/${bucketTitle}/${bucketTitle}.pdf`;
+        const IAuri = `https://s3.us.archive.org/${bucketTitle}/${bucketTitle}.pdf`;
         const trueURI = `http://archive.org/details/${bucketTitle}`;
         jobLogs["trueURI"] = trueURI;
         jobLogs["userName"] = job.data.details.userName;
